@@ -19,9 +19,9 @@ const PictureRoute = require('./src/routes/PictureRoute')
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+
 app.use(express.static(path.join(__dirname, 'pictures ' )));
-
-
 app.use('/pictures', express.static(__dirname + '/pictures'));
 
 
